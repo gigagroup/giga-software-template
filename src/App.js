@@ -24,7 +24,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
  * separately
  */
 
-// import Hero from "components/hero/TwoColumnWithVideo.js";
+import TwoColumnWithVideo from "components/hero/TwoColumnWithVideo.js";
 // import Hero from "components/hero/TwoColumnWithInput.js";
 // import Hero from "components/hero/TwoColumnWithFeaturesAndTestimonial.js";
 // import Hero from "components/hero/TwoColumnWithPrimaryBackground.js";
@@ -38,7 +38,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import Features from "components/features/VerticalWithAlternateImageAndText.js";
 // import Features from "components/features/DashedBorderSixFeatures";
 // import MainFeature from "components/features/TwoColWithButton.js";
-// import MainFeature from "components/features/TwoColSingleFeatureWithStats.js";
+import TwoColSingleFeatureWithStats from "components/features/TwoColSingleFeatureWithStats.js";
 // import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
 // import MainFeature from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
 // import FeatureWithSteps from "components/features/TwoColWithSteps.js";
@@ -123,8 +123,14 @@ export default function App() {
         <Route path="/download">
           <BlogIndexPage />
         </Route>
+        <Route path="/downloadgratis">
+          <TwoColumnWithVideo />
+        </Route>
         <Route path="/order">
           <ContactUsPage />
+        </Route>
+        <Route path="/konfirmasi">
+          <TwoColSingleFeatureWithStats />
         </Route>
         <Route path="/">
           <MainLandingPage />
