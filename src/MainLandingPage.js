@@ -100,9 +100,9 @@ const ResizeHandleButton = tw.button`cursor-col-resize focus:outline-none w-4 bo
 export default ({
   features = null,
   primaryButtonUrl = "#landingPageDemos",
-  primaryButtonText = "Explore Demos",
+  primaryButtonText = "Produk Kami",
   secondaryButtonUrl = "#componentDemos",
-  secondaryButtonText = "View Components",
+  secondaryButtonText = "Lihat Components",
   buttonRoundedCss = "",
   landingPages = components.landingPages,
   innerPages = components.innerPages,
@@ -141,7 +141,7 @@ export default ({
           <NavRow>
             <LogoLink href="/">
               <img src={logo} alt="" />
-              Treact
+              GigaSoftware
             </LogoLink>
             {/* <DownloadLink target="_blank" href="https://gum.co/QaruQ">
               Download Now
@@ -149,12 +149,14 @@ export default ({
           </NavRow>
           <HeroRow>
             <TextColumn>
-              <Heading>Modern React Templates for every need.</Heading>
+              <Heading>Dalam misi mencetak 1 Juta UMKM Go Online.</Heading>
               <Description>
-                Easily customizable modern React Templates which are also
-                lightweight and simple to setup. All components are modular and
-                fully responsive for great mobile experience as well as big
-                desktop screens. Brand Colors are also fully customizable.
+                Giga Software adalah sebuah perusahaan yang fokus mengembangkan
+                sebuah sistem software menggunakan stack teknologi canggih yang
+                biasa digunakan oleh perushaan teknologi besar dunia. sehingga
+                dengan software canggih yang kami buat bisa untuk membantu para
+                UMKM untuk bisa terdigitalisasi dan tersambung oleh sistem yang
+                canggih.
               </Description>
               <FeatureList>
                 {features.map((feature, index) => (
@@ -182,10 +184,11 @@ export default ({
           <SectionContainer id="landingPageDemos">
             <SectionHeading>Landing Pages</SectionHeading>
             <SectionDescription>
-              We have {noOfLandingPages} premade landing pages. Click on the
-              "View Live Demo" button to see them in action. Customizing or
-              Creating your own custom landing page is really simple by using
-              our UI components.
+              Kita mempunyai {noOfLandingPages} halaman arahan yang telah dibuat
+              sebelumnya. Klik pada Tombol "Lihat Demo" untuk melihat Landing
+              page secara langsung. Menyesuaikan atau Membuat halaman landing
+              page anda sendiri sangat sederhana dengan menggunakan komponen UI
+              kami.
             </SectionDescription>
             <PreviewCards>
               {Object.entries(landingPages).map(([pageName, page], index) => (
@@ -204,7 +207,7 @@ export default ({
                         imageSrc={page.imageSrc}
                       />
                     </PreviewCardImageContainer>
-                    <PreviewButton>View Live Demo</PreviewButton>
+                    <PreviewButton>Lihat Demo</PreviewButton>
                   </PreviewCard>
                 </PreviewCardContainer>
               ))}
@@ -213,10 +216,10 @@ export default ({
           <SectionContainer>
             <SectionHeading>Inner Pages</SectionHeading>
             <SectionDescription>
-              We also provide {noOfInnerPages} additional inner pages for your
-              various needs like a signup, login, pricing, about us, contact,
-              blog etc. To view them in action click the "View Live Demo"
-              button.
+              Kami juga menyediakan{noOfInnerPages} halaman dalam tambahan untuk
+              berbagai kebutuhan Anda seperti pendaftaran, login, harga, tentang
+              kami, kontak, blog, dll. Untuk melihatnya beraksi, klik tombol
+              "Lihat Demo ".
             </SectionDescription>
             <PreviewCards>
               {Object.entries(innerPages).map(([pageName, page], index) => (
@@ -238,7 +241,7 @@ export default ({
                         imageSrc={page.imageSrc}
                       />
                     </PreviewCardImageContainer>
-                    <PreviewButton>View Live Demo</PreviewButton>
+                    <PreviewButton>Lihat Demo</PreviewButton>
                   </PreviewCard>
                 </PreviewCardContainer>
               ))}
@@ -248,10 +251,11 @@ export default ({
           <SectionContainer id="componentDemos">
             <SectionHeading>Component Blocks</SectionHeading>
             <SectionDescription>
-              We also provide {noOfComponentBlocks} components along with the
-              premade landing pages so you can create your own landing page
-              within minutes as you see fit. You can combine these components to
-              create 1000s of unique attractive web pages.
+              Kami juga menyediakan {noOfComponentBlocks} komponen bersama
+              dengan halaman webiste yang dibuat sebelumnya sehingga Anda dapat
+              membuat halaman website Anda sendiri dalam beberapa menit sesuai
+              keinginan Anda. Anda dapat menggabungkan komponen ini ke membuat
+              1000 halaman web menarik yang unik.
             </SectionDescription>
             <BlocksRenderer blocks={Object.values(blocks)} />
           </SectionContainer>
@@ -320,7 +324,7 @@ const Block = ({ notifyIsVisible, components }) => {
                 href={component.url}
                 target="_blank"
               >
-                View Live Demo{" "}
+                Lihat demo{" "}
                 <ArrowRightIcon tw="transition duration-300 transform group-hover:translate-x-px ml-2 w-4 h-4" />
               </ComponentPreviewLink>
             </ComponentHeading>
