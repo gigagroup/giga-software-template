@@ -97,7 +97,7 @@ import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
 // import PricingPage from "pages/Pricing.js";
 // import AboutUsPage from "pages/AboutUs.js";
 // import ContactUsPage from "pages/ContactUs.js";
-// import BlogIndexPage from "pages/BlogIndex.js";
+import BlogIndexPage from "pages/BlogIndex.js";
 // import TermsOfServicePage from "pages/TermsOfService.js";
 // import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
@@ -117,10 +117,13 @@ export default function App() {
         <Route path="/components/:type/:name">
           <ComponentRenderer />
         </Route>
-        <Route path="/">
+        <Route path="/salespage">
           <SaaSProductLandingPage />
         </Route>
-        <Route path="/main">
+        <Route path="/download">
+          <BlogIndexPage />
+        </Route>
+        <Route path="/">
           <MainLandingPage />
         </Route>
       </Switch>
