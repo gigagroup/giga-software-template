@@ -26,7 +26,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 
 import TwoColumnWithVideo from "components/hero/TwoColumnWithVideo.js";
 // import Hero from "components/hero/TwoColumnWithInput.js";
-// import Hero from "components/hero/TwoColumnWithFeaturesAndTestimonial.js";
+import TwoColumnWithFeaturesAndTestimonial from "components/hero/TwoColumnWithFeaturesAndTestimonial.js";
 // import Hero from "components/hero/TwoColumnWithPrimaryBackground.js";
 // import Hero from "components/hero/FullWidthWithImage.js";
 // import Hero from "components/hero/BackgroundAsImage.js";
@@ -117,12 +117,17 @@ export default function App() {
         <Route path="/components/:type/:name">
           <ComponentRenderer />
         </Route>
+        {/* Sales */}
         <Route path="/salespage">
           <SaaSProductLandingPage />
         </Route>
         <Route path="/download">
           <BlogIndexPage />
         </Route>
+        <Route path="/ordersales">
+          <TwoColumnWithFeaturesAndTestimonial />
+        </Route>
+        {/* Gratis Leads */}
         <Route path="/downloadgratis">
           <TwoColumnWithVideo />
         </Route>
@@ -132,6 +137,7 @@ export default function App() {
         <Route path="/konfirmasi">
           <TwoColSingleFeatureWithStats />
         </Route>
+
         <Route path="/">
           <MainLandingPage />
         </Route>
