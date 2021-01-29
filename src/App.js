@@ -96,7 +96,7 @@ import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
 // import SignupPage from "pages/Signup.js";
 // import PricingPage from "pages/Pricing.js";
 // import AboutUsPage from "pages/AboutUs.js";
-// import ContactUsPage from "pages/ContactUs.js";
+import ContactUsPage from "pages/ContactUs.js";
 import BlogIndexPage from "pages/BlogIndex.js";
 // import TermsOfServicePage from "pages/TermsOfService.js";
 // import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
@@ -122,6 +122,9 @@ export default function App() {
         </Route>
         <Route path="/download">
           <BlogIndexPage />
+        </Route>
+        <Route path="/order">
+          <ContactUsPage />
         </Route>
         <Route path="/">
           <MainLandingPage />
