@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
@@ -6,6 +6,7 @@ import Header from "components/headers/light.js";
 import Footer from "components/footers/FiveColumnWithInputForm.js";
 import ContactUsForm from "components/forms/TwoColContactUsWithIllustrationFullForm.js";
 import ContactDetails from "components/cards/ThreeColContactDetails.js";
+import ReactPixel from "react-facebook-pixel";
 
 const Address = tw.span`leading-relaxed`;
 const AddressLine = tw.span`block`;
@@ -13,6 +14,21 @@ const Email = tw.span`text-sm mt-6 block text-gray-500`;
 const Phone = tw.span`text-sm mt-0 block text-gray-500`;
 
 export default () => {
+  // useEffect(() => {
+  //   ReactPixel.track("Purchase", { currency: "IDR", value: 450000.0 });
+  // });
+
+  useEffect(() => {
+    const advancedMatching = { em: "muhamadaziz047@email.com" }; // optional, more info: https://developers.facebook.com/docs/facebook-pixel/advanced/advanced-matching
+    const options = {
+      autoConfig: true, // set pixel's autoConfig. More info: https://developers.facebook.com/docs/facebook-pixel/advanced/
+      debug: false, // enable logs
+    };
+    ReactPixel.init("845126106051612", advancedMatching, options);
+
+    ReactPixel.pageView(); // For tracking page view
+    ReactPixel.track("ViewContent");
+  }, []);
   return (
     <AnimationRevealPage>
       <Header />
@@ -30,7 +46,7 @@ export default () => {
                 <Email>contact@treact.com</Email>
                 <Phone>+1 (203) 991-6988</Phone>
               </>
-            )
+            ),
           },
           {
             title: "Illinois",
@@ -43,7 +59,7 @@ export default () => {
                 <Email>contact@treact.com</Email>
                 <Phone>+1 (203) 991-6988</Phone>
               </>
-            )
+            ),
           },
           {
             title: "California",
@@ -56,7 +72,7 @@ export default () => {
                 <Email>contact@treact.com</Email>
                 <Phone>+1 (203) 991-6988</Phone>
               </>
-            )
+            ),
           },
           {
             title: "Tennessee",
@@ -69,7 +85,7 @@ export default () => {
                 <Email>contact@treact.com</Email>
                 <Phone>+1 (203) 991-6988</Phone>
               </>
-            )
+            ),
           },
           {
             title: "New Jersey",
@@ -82,7 +98,7 @@ export default () => {
                 <Email>contact@treact.com</Email>
                 <Phone>+1 (203) 991-6988</Phone>
               </>
-            )
+            ),
           },
           {
             title: "Ohio",
@@ -95,8 +111,8 @@ export default () => {
                 <Email>contact@treact.com</Email>
                 <Phone>+1 (203) 991-6988</Phone>
               </>
-            )
-          }
+            ),
+          },
         ]}
       />
       <Footer />
