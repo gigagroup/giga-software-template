@@ -1,7 +1,7 @@
 import "tailwindcss/dist/base.css";
 import "styles/globalStyles.css";
-import React from "react";
-// import ReactPixel from "react-facebook-pixel";
+import React, { useEffect } from "react";
+import ReactPixel from "react-facebook-pixel";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
 /*
@@ -108,15 +108,15 @@ import MainLandingPage from "MainLandingPage.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function App() {
-  // useEffect(() => {
-  //   const advancedMatching = { em: "muhamadaziz047@email.com" }; // optional, more info: https://developers.facebook.com/docs/facebook-pixel/advanced/advanced-matching
-  //   const options = {
-  //     autoConfig: true, // set pixel's autoConfig. More info: https://developers.facebook.com/docs/facebook-pixel/advanced/
-  //     debug: false, // enable logs
-  //   };
-  //   ReactPixel.init("207169187758936", advancedMatching, options);
-  //   ReactPixel.pageView(); // For tracking page view
-  // }, []);
+  useEffect(() => {
+    const advancedMatching = { em: "muhamadaziz047@email.com" }; // optional, more info: https://developers.facebook.com/docs/facebook-pixel/advanced/advanced-matching
+    const options = {
+      autoConfig: true, // set pixel's autoConfig. More info: https://developers.facebook.com/docs/facebook-pixel/advanced/
+      debug: false, // enable logs
+    };
+    ReactPixel.init("845126106051612", advancedMatching, options);
+    ReactPixel.pageView(); // For tracking page view
+  }, []);
   // return <AnimationRevealPage disabled></AnimationRevealPage>;
   return (
     <Router>

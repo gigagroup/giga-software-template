@@ -25,8 +25,6 @@ export default () => {
       debug: false, // enable logs
     };
     ReactPixel.init("845126106051612", advancedMatching, options);
-
-    ReactPixel.pageView(); // For tracking page view
     ReactPixel.track("ViewContent");
   }, []);
   return (
