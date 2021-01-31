@@ -23,39 +23,39 @@ export default () => {
       <Header />
       <MainFeature1
         subheading={<Subheading>Tentang GigaSoftware</Subheading>}
-        heading="We are a modern desgin agency."
+        heading="Kami adalah agensi desgin modern."
         buttonRounded={false}
-        primaryButtonText="See Portfolio"
+        primaryButtonText="Lihat Portfolio"
         imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
       />
       <MainFeature1
-        subheading={<Subheading>Our Vision</Subheading>}
-        heading="We aim to disrupt the desgin space."
+        subheading={<Subheading>Visi Kami</Subheading>}
+        heading="Kami bertujuan untuk menghias ruang desain."
         buttonRounded={false}
-        primaryButtonText="Contact Us"
+        primaryButtonText="Kontak Kami"
         imageSrc="https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=768&q=80"
         textOnLeft={false}
       />
       <Features
-        subheading={<Subheading>Our Values</Subheading>}
-        heading="We follow these."
+        subheading={<Subheading>Value kami</Subheading>}
+        heading="Kami mengikuti ini."
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         cards={[
           {
             imageSrc: SupportIconImage,
-            title: "24/7 Support",
+            title: "24/7 Dukungan",
             description:
               "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport",
           },
           {
             imageSrc: ShieldIconImage,
-            title: "Strong Teams",
+            title: "Tim yang kuat",
             description:
               "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport",
           },
           {
             imageSrc: CustomerLoveIconImage,
-            title: "Customer Satisfaction",
+            title: "Kepuasan Pelanggan",
             description:
               "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport",
           },

@@ -73,8 +73,8 @@ export default ({
   ],
   submitButtonText = "Masuk",
   SubmitButtonIcon = LoginIcon,
-  forgotPasswordUrl = "#",
-  signupUrl = "#",
+  forgotPasswordUrl = "/login",
+  signupUrl = "/daftar",
 }) => (
   <AnimationRevealPage>
     <Container>
