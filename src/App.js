@@ -93,14 +93,14 @@ import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
 // import HostingCloudLandingPage from "demos/HostingCloudLandingPage.js";
 
 /* Inner Pages */
-// import LoginPage from "pages/Login.js";
-// import SignupPage from "pages/Signup.js";
-// import PricingPage from "pages/Pricing.js";
-// import AboutUsPage from "pages/AboutUs.js";
+import LoginPage from "pages/Login.js";
+import SignupPage from "pages/Signup.js";
+import PricingPage from "pages/Pricing.js";
+import AboutUsPage from "pages/AboutUs.js";
 import ContactUsPage from "pages/ContactUs.js";
 import BlogIndexPage from "pages/BlogIndex.js";
-// import TermsOfServicePage from "pages/TermsOfService.js";
-// import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
+import TermsOfServicePage from "pages/TermsOfService.js";
+import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
 import ComponentRenderer from "ComponentRenderer.js";
 import MainLandingPage from "MainLandingPage.js";
@@ -131,9 +131,6 @@ export default function App() {
         <Route path="/salespage">
           <SaaSProductLandingPage />
         </Route>
-        <Route path="/download">
-          <BlogIndexPage />
-        </Route>
         <Route path="/ordersales">
           <TwoColumnWithFeaturesAndTestimonial />
         </Route>
@@ -141,13 +138,33 @@ export default function App() {
         <Route path="/downloadgratis">
           <TwoColumnWithVideo />
         </Route>
-        <Route path="/order">
-          <ContactUsPage />
-        </Route>
         <Route path="/konfirmasi">
           <TwoColSingleFeatureWithStats />
         </Route>
-
+        <Route path="/login">
+          <LoginPage />
+        </Route>
+        <Route path="/daftar">
+          <SignupPage />
+        </Route>
+        <Route path="/tentang">
+          <AboutUsPage />
+        </Route>
+        <Route path="/harga">
+          <PricingPage />
+        </Route>
+        <Route path="/kontak">
+          <ContactUsPage />
+        </Route>
+        <Route path="/blog">
+          <BlogIndexPage />
+        </Route>
+        <Route path="/terms">
+          <TermsOfServicePage />
+        </Route>
+        <Route path="/privasi">
+          <PrivacyPolicyPage />
+        </Route>
         <Route path="/">
           <MainLandingPage />
         </Route>

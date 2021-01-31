@@ -21,12 +21,16 @@ const LinkList = tw.ul`mt-6 text-sm font-medium`;
 const LinkListItem = tw.li`mt-3`;
 const Link = tw.a`border-b-2 border-transparent hocus:border-gray-700 pb-1 transition duration-300`;
 
-const SubscribeNewsletterColumn = tw(Column)`text-center lg:text-left w-full! lg:w-auto! mt-20 lg:mt-12`;
+const SubscribeNewsletterColumn = tw(
+  Column
+)`text-center lg:text-left w-full! lg:w-auto! mt-20 lg:mt-12`;
 const SubscribeNewsletterContainer = tw.div`max-w-sm mx-auto lg:mx-0 `;
 const SubscribeText = tw.p`mt-2 lg:mt-6 text-sm font-medium text-gray-600`;
 const SubscribeForm = tw.form`mt-4 lg:mt-6 text-sm sm:flex max-w-xs sm:max-w-none mx-auto sm:mx-0`;
 const Input = tw.input`bg-gray-300 px-6 py-3 rounded sm:rounded-r-none border-2 sm:border-r-0 border-gray-400 hover:border-primary-500 focus:outline-none transition duration-300 w-full`;
-const SubscribeButton = tw(PrimaryButtonBase)`mt-4 sm:mt-0 w-full sm:w-auto rounded sm:rounded-l-none px-8 py-3`;
+const SubscribeButton = tw(
+  PrimaryButtonBase
+)`mt-4 sm:mt-0 w-full sm:w-auto rounded sm:rounded-l-none px-8 py-3`;
 
 const Divider = tw.div`my-16 border-b-2 border-gray-300 w-full`;
 
@@ -52,36 +56,36 @@ export default () => {
       <Content>
         <SixColumns>
           <Column>
-            <ColumnHeading>Main</ColumnHeading>
+            <ColumnHeading>Utama</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Blog</Link>
+                <Link href="/blog">Blog</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">FAQs</Link>
+                <Link href="/salespage">FAQs</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Support</Link>
+                <Link href="/salespage">Dukungan</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">About Us</Link>
+                <Link href="/tentang">Tentang</Link>
               </LinkListItem>
             </LinkList>
           </Column>
           <Column>
-            <ColumnHeading>Product</ColumnHeading>
+            <ColumnHeading>Produk</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Log In</Link>
+                <Link href="/login">Masuk</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Personal</Link>
+                <Link href="/salespage">Personal</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Business</Link>
+                <Link href="/salespage">Bisnis</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Team</Link>
+                <Link href="/salespage">Team</Link>
               </LinkListItem>
             </LinkList>
           </Column>
@@ -89,16 +93,16 @@ export default () => {
             <ColumnHeading>Press</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Logos</Link>
+                <Link href="/salespage">Logo</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Events</Link>
+                <Link href="/salespage">Acara</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Stories</Link>
+                <Link href="/salespage">Cerita</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Office</Link>
+                <Link href="/salespage">Kantor</Link>
               </LinkListItem>
             </LinkList>
           </Column>
@@ -106,28 +110,30 @@ export default () => {
             <ColumnHeading>Legal</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">GDPR</Link>
+                <Link href="/salespage">GDPR</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Privacy Policy</Link>
+                <Link href="/privasi">Kebijakan Privasi</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Terms of Service</Link>
+                <Link href="/terms">Persyaratan Layanan</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Disclaimer</Link>
+                <Link href="/salespage">Disclaimer</Link>
               </LinkListItem>
             </LinkList>
           </Column>
           <SubscribeNewsletterColumn>
             <SubscribeNewsletterContainer>
-              <ColumnHeading>Subscribe to our Newsletter</ColumnHeading>
+              <ColumnHeading>Berlangganan newsletter kami</ColumnHeading>
               <SubscribeText>
-                We deliver high quality blog posts written by professionals weekly. And we promise no spam.
+                Kami memberikan posting blog berkualitas tinggi yang ditulis
+                oleh para profesional setiap minggu. Dan kami berjanji tidak ada
+                spam.
               </SubscribeText>
               <SubscribeForm method="get" action="#">
                 <Input type="email" placeholder="Your Email Address" />
-                <SubscribeButton type="submit">Subscribe</SubscribeButton>
+                <SubscribeButton type="submit">Berlangganan</SubscribeButton>
               </SubscribeForm>
             </SubscribeNewsletterContainer>
           </SubscribeNewsletterColumn>
@@ -136,9 +142,11 @@ export default () => {
         <ThreeColRow>
           <LogoContainer>
             <LogoImg src={LogoImage} />
-            <LogoText>Treact Inc.</LogoText>
+            <LogoText>GigaSoftware.</LogoText>
           </LogoContainer>
-          <CopywrightNotice>&copy; 2018 Treact Inc. All Rights Reserved.</CopywrightNotice>
+          <CopywrightNotice>
+            &copy; 2021 GigaSoftware. All Rights Reserved.
+          </CopywrightNotice>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">
               <FacebookIcon />

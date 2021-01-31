@@ -53,36 +53,36 @@ export default () => {
       <Content>
         <FiveColumns>
           <Column>
-            <ColumnHeading>Main</ColumnHeading>
+            <ColumnHeading>Utama</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Blog</Link>
+                <Link href="/blog">Blog</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">FAQs</Link>
+                <Link href="/salespage">FAQs</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Support</Link>
+                <Link href="/salespage">Dukungan</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">About Us</Link>
+                <Link href="/tentang">Tentang</Link>
               </LinkListItem>
             </LinkList>
           </Column>
           <Column>
-            <ColumnHeading>Product</ColumnHeading>
+            <ColumnHeading>Produk</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Log In</Link>
+                <Link href="/login">Masuk</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Personal</Link>
+                <Link href="/salespage">Personal</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Business</Link>
+                <Link href="/salespage">Bisnis</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Team</Link>
+                <Link href="/salespage">Team</Link>
               </LinkListItem>
             </LinkList>
           </Column>
@@ -90,16 +90,16 @@ export default () => {
             <ColumnHeading>Press</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Logos</Link>
+                <Link href="/salespage">Logo</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Events</Link>
+                <Link href="/salespage">Acara</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Stories</Link>
+                <Link href="/salespage">Cerita</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Office</Link>
+                <Link href="/salespage">Kantor</Link>
               </LinkListItem>
             </LinkList>
           </Column>
@@ -107,16 +107,16 @@ export default () => {
             <ColumnHeading>Team</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Career</Link>
+                <Link href="/salespage">Karir</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Founders</Link>
+                <Link href="/salespage">Founders</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Culture</Link>
+                <Link href="/salespage">Budaya</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Onboarding</Link>
+                <Link href="/salespage">Onboarding</Link>
               </LinkListItem>
             </LinkList>
           </Column>
@@ -124,16 +124,16 @@ export default () => {
             <ColumnHeading>Legal</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">GDPR</Link>
+                <Link href="/salespage">GDPR</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Privacy Policy</Link>
+                <Link href="/privasi">Kebijakan Privasi</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Terms of Service</Link>
+                <Link href="/terms">Persyaratan Layanan</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Disclaimer</Link>
+                <Link href="/salespage">Disclaimer</Link>
               </LinkListItem>
             </LinkList>
           </Column>
@@ -142,9 +142,11 @@ export default () => {
         <ThreeColRow>
           <LogoContainer>
             <LogoImg src={LogoImage} />
-            <LogoText>Treact Inc.</LogoText>
+            <LogoText>GigaSoftware.</LogoText>
           </LogoContainer>
-          <CopywrightNotice>&copy; 2018 Treact Inc. All Rights Reserved.</CopywrightNotice>
+          <CopywrightNotice>
+            &copy; 2021 GigaSoftware . All Rights Reserved.
+          </CopywrightNotice>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">
               <FacebookIcon />
