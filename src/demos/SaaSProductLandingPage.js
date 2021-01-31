@@ -26,24 +26,24 @@ export default () => {
     <AnimationRevealPage>
       <Hero roundedHeaderButton={true} />
       <Features
-        subheading={<Subheading>Features</Subheading>}
+        subheading={<Subheading>Fitur</Subheading>}
         heading={
           <>
-            We have Amazing <HighlightedText>Service.</HighlightedText>
+            Kami memiliki layanan <HighlightedText>terbaik.</HighlightedText>
           </>
         }
       />
       <MainFeature
-        subheading={<Subheading>Quality Work</Subheading>}
+        subheading={<Subheading>Kualitas Kerja</Subheading>}
         imageSrc={heroScreenshotImageSrc}
         imageBorder={true}
         imageDecoratorBlob={true}
       />
       <FeatureWithSteps
-        subheading={<Subheading>STEPS</Subheading>}
+        subheading={<Subheading>LANGKAH</Subheading>}
         heading={
           <>
-            Easy to <HighlightedText>Get Started.</HighlightedText>
+            Mudah untuk <HighlightedText>Memulai.</HighlightedText>
           </>
         }
         textOnLeft={false}
@@ -52,10 +52,11 @@ export default () => {
         decoratorBlobCss={tw`xl:w-40 xl:h-40 opacity-15 -translate-x-1/2 left-1/2`}
       />
       <MainFeature2
-        subheading={<Subheading>VALUES</Subheading>}
+        subheading={<Subheading>NILAI</Subheading>}
         heading={
           <>
-            We Always Abide by Our <HighlightedText>Principles.</HighlightedText>
+            Kami Selalu Mematuhi{" "}
+            <HighlightedText>Prinsip Kami.</HighlightedText>
           </>
         }
         imageSrc={prototypeIllustrationImageSrc}
@@ -63,23 +64,25 @@ export default () => {
         features={[
           {
             Icon: MoneyIcon,
-            title: "Affordable",
-            description: "We promise to offer you the best rate we can - at par with the industry standard.",
-            iconContainerCss: tw`bg-green-300 text-green-800`
+            title: "Terjangkau",
+            description:
+              "Kami berjanji untuk menawarkan harga terbaik yang kami bisa - setara dengan standar industri.",
+            iconContainerCss: tw`bg-green-300 text-green-800`,
           },
           {
             Icon: BriefcaseIcon,
-            title: "Professionalism",
-            description: "We assure you that our templates are designed and created by professional designers.",
-            iconContainerCss: tw`bg-red-300 text-red-800`
-          }
+            title: "Profesionalisme",
+            description:
+              "Kami menjamin Anda bahwa template kami dirancang dan dibuat oleh desainer profesional.",
+            iconContainerCss: tw`bg-red-300 text-red-800`,
+          },
         ]}
       />
       <Pricing
-        subheading={<Subheading>Pricing</Subheading>}
+        subheading={<Subheading>Harga</Subheading>}
         heading={
           <>
-            Reasonable & Flexible <HighlightedText>Plans.</HighlightedText>
+            Paket <HighlightedText> Wajar & Fleksibel .</HighlightedText>
           </>
         }
         plans={[
@@ -87,31 +90,46 @@ export default () => {
             name: "Personal",
             price: "$17.99",
             duration: "Monthly",
-            mainFeature: "For Individuals",
-            features: ["30 Templates", "7 Landing Pages", "12 Internal Pages", "Basic Assistance"]
+            mainFeature: "Untuk Individu",
+            features: [
+              "30 Templates",
+              "7 Landing Pages",
+              "12 Internal Pages",
+              "Basic Assistance",
+            ],
           },
           {
             name: "Business",
             price: "$37.99",
             duration: "Monthly",
-            mainFeature: "For Small Businesses",
-            features: ["60 Templates", "15 Landing Pages", "22 Internal Pages", "Priority Assistance"],
-            featured: true
+            mainFeature: "Untuk Bisnis Kecil",
+            features: [
+              "60 Templates",
+              "15 Landing Pages",
+              "22 Internal Pages",
+              "Priority Assistance",
+            ],
+            featured: true,
           },
           {
             name: "Enterprise",
             price: "$57.99",
             duration: "Monthly",
-            mainFeature: "For Large Companies",
-            features: ["90 Templates", "27 Landing Pages", "37 Internal Pages", "Personal Assistance"]
-          }
+            mainFeature: "Untuk Perusahaan Besar",
+            features: [
+              "90 Templates",
+              "27 Landing Pages",
+              "37 Internal Pages",
+              "Personal Assistance",
+            ],
+          },
         ]}
       />
       <Testimonial
-        subheading={<Subheading>Testimonials</Subheading>}
+        subheading={<Subheading>Testimoni</Subheading>}
         heading={
           <>
-            Our Clients <HighlightedText>Love Us.</HighlightedText>
+            Pelanggan <HighlightedText>tercinta kami.</HighlightedText>
           </>
         }
         testimonials={[
@@ -119,66 +137,67 @@ export default () => {
             stars: 5,
             profileImageSrc:
               "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
-            heading: "Amazing User Experience",
+            heading: "Pengalaman Pengguna yang Luar Biasa",
             quote:
               "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
             customerName: "Charlotte Hale",
-            customerTitle: "Director, Delos Inc."
+            customerTitle: "Director, Delos Inc.",
           },
           {
             stars: 5,
             profileImageSrc:
               "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
-            heading: "Love the Developer Experience and Design Principles !",
+            heading: "Cintai Pengalaman Pengembang dan Prinsip Desain!",
             quote:
               "Sinor Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
             customerName: "Adam Cuppy",
-            customerTitle: "Founder, EventsNYC"
-          }
+            customerTitle: "Founder, EventsNYC",
+          },
         ]}
       />
       <FAQ
         subheading={<Subheading>FAQS</Subheading>}
         heading={
           <>
-            You have <HighlightedText>Questions ?</HighlightedText>
+            Kamu Punya<HighlightedText>Pertanyaan ?</HighlightedText>
           </>
         }
         faqs={[
           {
-            question: "Are all the templates easily customizable ?",
+            question: "Apakah semua templat dapat disesuaikan dengan mudah?",
             answer:
-              "Yes, they all are. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "Ya, semuanya. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercise ullamco laboris nisi ut aliquip ex ea commodo execution.",
           },
           {
-            question: "How long do you usually support an standalone template for ?",
+            question: "Berapa lama biasanya Anda mendukung template mandiri?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
           },
           {
-            question: "What kind of payment methods do you accept ?",
+            question: "Jenis metode pembayaran apa yang Anda terima?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
           },
           {
-            question: "Is there a subscribption service to get the latest templates ?",
+            question:
+              "Apakah ada layanan berlangganan untuk mendapatkan template terbaru?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
           },
           {
-            question: "Are the templates compatible with the React ?",
+            question: "Apakah templatnya kompatibel dengan React?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
           },
           {
-            question: "Do you really support Internet Explorer 11 ?",
+            question: "Apakah Anda benar-benar mendukung Internet Explorer 11?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          }
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          },
         ]}
       />
-      <GetStarted/>
+      <GetStarted />
       <Footer />
     </AnimationRevealPage>
   );
-}
+};

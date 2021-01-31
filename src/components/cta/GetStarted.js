@@ -33,10 +33,10 @@ const DecoratorBlob2 = tw(
   SvgDecoratorBlob1
 )`absolute top-0 right-0 w-80 h-80 transform  translate-x-20 -translate-y-64 text-primary-700 opacity-50`;
 export default ({
-  text = "Developers all over the world are happily using Treact.",
-  primaryLinkText = "Get Started",
+  text = "Developer di seluruh dunia dengan senang hati menggunakan GigaSoftware.",
+  primaryLinkText = "Memulai",
   primaryLinkUrl = "https://giga-software.netlify.app",
-  secondaryLinkText = "Contact Us",
+  secondaryLinkText = "Kontak Kami",
   secondaryLinkUrl = "http://google.com",
   pushDownFooter = true,
 }) => {

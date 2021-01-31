@@ -53,20 +53,20 @@ export default ({ roundedHeaderButton }) => {
         <TwoColumn>
           <LeftColumn>
             <Heading>
-              Beautiful React Templates{" "}
-              <span tw="text-primary-500">for you.</span>
+              Template React yang Cantik{" "}
+              <span tw="text-primary-500">untukmu.</span>
             </Heading>
             <Paragraph>
-              Our templates are easy to setup, understand and customize. Fully
-              modular components with a variety of pages and components.
+              Template kami mudah diatur, dipahami, dan disesuaikan. Sepenuhnya
+              komponen modular dengan berbagai halaman dan komponen.
             </Paragraph>
             <Actions>
-              <input type="text" placeholder="Your E-mail Address" />
-              <button>Get Started</button>
+              <input type="text" placeholder="Alamat email kamu" />
+              <button>Memulai</button>
             </Actions>
             <CustomersLogoStrip>
-              <p>Our TRUSTED Customers</p>
-              <img src={CustomersLogoStripImage} alt="Our Customers" />
+              <p>Pelanggan TEPERCAYA kami</p>
+              <img src={CustomersLogoStripImage} alt="Pelanggan kami" />
             </CustomersLogoStrip>
           </LeftColumn>
           <RightColumn>
