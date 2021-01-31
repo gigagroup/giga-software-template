@@ -39,7 +39,7 @@ import TwoColumnWithFeaturesAndTestimonial from "components/hero/TwoColumnWithFe
 // import Features from "components/features/VerticalWithAlternateImageAndText.js";
 // import Features from "components/features/DashedBorderSixFeatures";
 // import MainFeature from "components/features/TwoColWithButton.js";
-import TwoColSingleFeatureWithStats from "components/features/TwoColSingleFeatureWithStats.js";
+// import TwoColSingleFeatureWithStats from "components/features/TwoColSingleFeatureWithStats.js";
 // import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
 // import MainFeature from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
 // import FeatureWithSteps from "components/features/TwoColWithSteps.js";
@@ -102,6 +102,10 @@ import BlogIndexPage from "pages/BlogIndex.js";
 import TermsOfServicePage from "pages/TermsOfService.js";
 import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
+// Leads
+import KonfirmasigratisPage from "pages/leads/Konfirmasigratis.js";
+import FormGratisPage from "pages/leads/Formgratis.js";
+
 import ComponentRenderer from "ComponentRenderer.js";
 import MainLandingPage from "MainLandingPage.js";
 
@@ -134,12 +138,15 @@ export default function App() {
         <Route path="/ordersales">
           <TwoColumnWithFeaturesAndTestimonial />
         </Route>
-        {/* Gratis Leads */}
+        {/* Leads */}
+        <Route path="/gratis">
+          <FormGratisPage />
+        </Route>
+        <Route path="/konfirmasigratis">
+          <KonfirmasigratisPage />
+        </Route>
         <Route path="/downloadgratis">
           <TwoColumnWithVideo />
-        </Route>
-        <Route path="/konfirmasi">
-          <TwoColSingleFeatureWithStats />
         </Route>
         {/* Header */}
         <Route path="/login">
