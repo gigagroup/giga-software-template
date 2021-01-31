@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading } from "components/misc/Headings.js";
-import ReactPixel from "react-facebook-pixel";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
@@ -35,16 +34,6 @@ const Value = tw.div`font-bold text-primary-500`;
 const Key = tw.div`font-medium text-gray-700`;
 
 export default ({ textOnLeft = false }) => {
-  useEffect(() => {
-    const advancedMatching = { em: "muhamadaziz047@email.com" }; // optional, more info: https://developers.facebook.com/docs/facebook-pixel/advanced/advanced-matching
-    const options = {
-      autoConfig: true, // set pixel's autoConfig. More info: https://developers.facebook.com/docs/facebook-pixel/advanced/
-      debug: false, // enable logs
-    };
-    ReactPixel.init("845126106051612", advancedMatching, options);
-    ReactPixel.track("Lead");
-  }, []);
-
   // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
   //Change the statistics variable as you like, add or delete objects
   const statistics = [
