@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import fbadspemula from "../../images/fbadspemula.png";
+import fbadspemula from "../../images/gmail.png";
 import ReactPixel from "react-facebook-pixel";
 
 import Header, {
@@ -43,10 +43,10 @@ const Heading = styled.h1`
   }
 `;
 
-const PrimaryAction = tw.button`rounded-full px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 font-bold shadow transition duration-300 bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:outline-none focus:shadow-outline`;
+// const PrimaryAction = tw.button`rounded-full px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 font-bold shadow transition duration-300 bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:outline-none focus:shadow-outline`;
 
 const Text = styled.h1`
-  ${tw`text-white text-lg text-center`}
+  ${tw`text-white text-3xl text-center`}
 `;
 
 export default () => {
@@ -92,11 +92,11 @@ export default () => {
           <Text>
             Dalam 3 s.d 5 menit saya akan kirimkan email konfirmasi.
             <br />
-            vSilahkan di cek bagian Inbox, Spam atau Folder Promosi
+            Silahkan di cek bagian Inbox, Spam atau Folder Promosi
             <br />
             Kemudian buka emailnya lalu Klik Link Konfirmasi
           </Text>
-          <PrimaryAction>Masuk Gmail</PrimaryAction>
+          {/* <PrimaryAction>Masuk Gmail</PrimaryAction> */}
         </Content>
       </HeroContainer>
     </Container>
