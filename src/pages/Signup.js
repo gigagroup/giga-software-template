@@ -126,7 +126,7 @@ export default ({
                 </p>
 
                 <p tw="mt-8 text-sm text-gray-600 text-center">
-                  Apakah sudan mempunyai akun?{" "}
+                  Apakah sudah mempunyai akun?{" "}
                   <a
                     href={signInUrl}
                     tw="border-b border-gray-500 border-dotted"

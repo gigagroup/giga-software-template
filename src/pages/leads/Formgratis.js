@@ -99,6 +99,26 @@ export default () => {
             Pemula Pun Bisa Mempraktekkannya <br />
             Lebih 100 orang sudah memilikinya{" "}
           </Text>
+
+          <form
+            action="https://app.getresponse.com/add_subscriber.html"
+            accept-charset="utf-8"
+            method="post"
+          >
+            {/*   Nama   */}
+            name: <input type="text" name="name" />
+            <br />
+            {/*   Bidang email (wajib diisi)   */}
+            email: <input type="text" name="email" />
+            <br />
+            {/*   Daftar dipilih   */}
+            {/*   Dapatkan token di: https://app.getresponse.com/campaign_list.html   */}
+            <input type="hidden" name="campaign_token" value="q7WO1" />
+            {/*   Tambahkan pelanggan urutan tindak lanjut sesuai hari yang telah ditentukan (opsional)   */}
+            <input type="hidden" name="start_day" value="0" />
+            {/*   Tombol pelanggan   */}
+            <input type="submit" value="Download" />
+          </form>
         </Content>
       </HeroContainer>
     </Container>
