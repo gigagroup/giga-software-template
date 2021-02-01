@@ -25,7 +25,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
  * separately
  */
 
-import TwoColumnWithVideo from "components/hero/TwoColumnWithVideo.js";
+// import TwoColumnWithVideo from "components/hero/TwoColumnWithVideo.js";
 // import Hero from "components/hero/TwoColumnWithInput.js";
 import TwoColumnWithFeaturesAndTestimonial from "components/hero/TwoColumnWithFeaturesAndTestimonial.js";
 // import Hero from "components/hero/TwoColumnWithPrimaryBackground.js";
@@ -105,6 +105,7 @@ import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 // Leads
 import KonfirmasigratisPage from "pages/leads/Konfirmasigratis.js";
 import FormGratisPage from "pages/leads/Formgratis.js";
+import DownloadGratisPage from "pages/leads/Downloadgratis.js";
 
 import ComponentRenderer from "ComponentRenderer.js";
 import MainLandingPage from "MainLandingPage.js";
@@ -146,7 +147,7 @@ export default function App() {
           <KonfirmasigratisPage />
         </Route>
         <Route path="/downloadgratis">
-          <TwoColumnWithVideo />
+          <DownloadGratisPage />
         </Route>
         {/* Header */}
         <Route path="/login">
