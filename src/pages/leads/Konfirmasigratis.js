@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import fbadspemula from "../../images/gmail.png";
+import gmail from "../../images/gmail.png";
 import ReactPixel from "react-facebook-pixel";
 
 import Header, {
@@ -37,7 +37,7 @@ const HeroContainer = tw.div`z-20 relative px-6 sm:px-8 mx-auto h-full flex flex
 const Content = tw.div`px-4 flex flex-1 flex-col justify-center items-center`;
 
 const Heading = styled.h1`
-  ${tw`text-3xl text-center sm:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-100 leading-snug -mt-24 sm:mt-0`}
+  ${tw`text-3xl text-center sm:text-3xl lg:text-3xl xl:text-5xl font-black text-gray-100 leading-snug -mt-24 sm:mt-0`}
   span {
     ${tw`inline-block mt-2`}
   }
@@ -86,8 +86,8 @@ export default () => {
           </Heading>
           <img
             // tw="min-w-0 w-full max-w-lg xl:max-w-3xl"
-            src={fbadspemula}
-            alt="Design fbadspemula"
+            src={gmail}
+            alt="Design gmail"
           />
           <Text>
             Dalam 3 s.d 5 menit saya akan kirimkan email konfirmasi.
