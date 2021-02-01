@@ -101,7 +101,7 @@ export default () => {
           </Text>
 
           <form
-            action="https://app.getresponse.com/add_subscriber.html"
+            action="https://giga-software.netlify.app/konfirmasigratis"
             accept-charset="utf-8"
             method="post"
           >

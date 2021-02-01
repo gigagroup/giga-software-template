@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import fbadspemula from "../../images/fbadspemula.png";
 import ReactPixel from "react-facebook-pixel";
 
 import Header, {
@@ -27,6 +28,7 @@ const PrimaryLink = tw(PrimaryLinkBase)`rounded-full`;
 const Container = styled.div`
   ${tw`relative bg-center bg-cover h-screen min-h-144`}
   background-image: url("https://images.unsplash.com/photo-1536300007881-7e482242baa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=80");
+  min-height: 66rem;
 `;
 
 const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-black opacity-75`;
@@ -43,6 +45,10 @@ const Heading = styled.h1`
 
 const PrimaryAction = tw.button`rounded-full px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 font-bold shadow transition duration-300 bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:outline-none focus:shadow-outline`;
 
+const Text = styled.h1`
+  ${tw`text-white text-lg text-center`}
+`;
+
 export default () => {
   useEffect(() => {
     const advancedMatching = { em: "muhamadaziz047@email.com" }; // optional, more info: https://developers.facebook.com/docs/facebook-pixel/advanced/advanced-matching
@@ -56,13 +62,14 @@ export default () => {
 
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">About</NavLink>
-      <NavLink href="#">Blog</NavLink>
-      <NavLink href="#">Locations</NavLink>
-      <NavLink href="#">Pricing</NavLink>
+      <NavLink href="/tentang">Tentang</NavLink>
+      <NavLink href="/blog">Blog</NavLink>
+      <NavLink href="/harga">Harga</NavLink>
+      <NavLink href="/kontak">Kontak Kami</NavLink>
     </NavLinks>,
     <NavLinks key={2}>
-      <PrimaryLink href="/#">Hire Us</PrimaryLink>
+      <NavLink href="/login">Login</NavLink>
+      <PrimaryLink href="/daftar">Daftar</PrimaryLink>
     </NavLinks>,
   ];
 
@@ -73,11 +80,23 @@ export default () => {
         <StyledHeader links={navLinks} />
         <Content>
           <Heading>
-            Book Music & Comedy Events Konfirmasi Email
+            Selanjutnya,
             <br />
-            anywhere in New York
+            Konfirmasi Email Anda
           </Heading>
-          <PrimaryAction>Search Events Near Me</PrimaryAction>
+          <img
+            // tw="min-w-0 w-full max-w-lg xl:max-w-3xl"
+            src={fbadspemula}
+            alt="Design fbadspemula"
+          />
+          <Text>
+            Dalam 3 s.d 5 menit saya akan kirimkan email konfirmasi.
+            <br />
+            vSilahkan di cek bagian Inbox, Spam atau Folder Promosi
+            <br />
+            Kemudian buka emailnya lalu Klik Link Konfirmasi
+          </Text>
+          <PrimaryAction>Masuk Gmail</PrimaryAction>
         </Content>
       </HeroContainer>
     </Container>
