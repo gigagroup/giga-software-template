@@ -101,7 +101,7 @@ export default () => {
           </Text>
 
           <form
-            action="https://giga-software.netlify.app/konfirmasigratis"
+            action="https://gigasoftware.vercel.app/konfirmasigratis"
             accept-charset="utf-8"
             method="post"
           >
