@@ -27,7 +27,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 
 // import TwoColumnWithVideo from "components/hero/TwoColumnWithVideo.js";
 // import Hero from "components/hero/TwoColumnWithInput.js";
-import TwoColumnWithFeaturesAndTestimonial from "components/hero/TwoColumnWithFeaturesAndTestimonial.js";
+// import TwoColumnWithFeaturesAndTestimonial from "components/hero/TwoColumnWithFeaturesAndTestimonial.js";
 // import Hero from "components/hero/TwoColumnWithPrimaryBackground.js";
 // import Hero from "components/hero/FullWidthWithImage.js";
 // import Hero from "components/hero/BackgroundAsImage.js";
@@ -87,7 +87,7 @@ import TwoColumnWithFeaturesAndTestimonial from "components/hero/TwoColumnWithFe
 // import EventLandingPage from "demos/EventLandingPage.js";
 // import HotelTravelLandingPage from "demos/HotelTravelLandingPage.js";
 // import AgencyLandingPage from "demos/AgencyLandingPage.js";
-import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
+// import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
 // import RestaurantLandingPage from "demos/RestaurantLandingPage.js";
 // import ServiceLandingPage from "demos/ServiceLandingPage.js";
 // import HostingCloudLandingPage from "demos/HostingCloudLandingPage.js";
@@ -105,7 +105,12 @@ import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 // Leads
 import KonfirmasigratisPage from "pages/leads/Konfirmasigratis.js";
 import FormGratisPage from "pages/leads/Formgratis.js";
-import DownloadGratisPage from "pages/leads/Downloadgratis.js";
+
+// Retargeting
+import Salespage from "pages/retargeting/Salespage.js";
+import Konfimasipage from "pages/retargeting/Konfirmasipage.js";
+import Orderpage from "pages/retargeting/Orderpage.js";
+import DownloadPage from "pages/retargeting/Downloadpage.js";
 
 import ComponentRenderer from "ComponentRenderer.js";
 import MainLandingPage from "MainLandingPage.js";
@@ -132,13 +137,6 @@ export default function App() {
         <Route path="/components/:type/:name">
           <ComponentRenderer />
         </Route>
-        {/* Sales */}
-        <Route path="/salespage">
-          <SaaSProductLandingPage />
-        </Route>
-        <Route path="/ordersales">
-          <TwoColumnWithFeaturesAndTestimonial />
-        </Route>
         {/* Leads */}
         <Route path="/gratis">
           <FormGratisPage />
@@ -146,10 +144,20 @@ export default function App() {
         <Route path="/konfirmasigratis">
           <KonfirmasigratisPage />
         </Route>
-        <Route path="/downloadgratis">
-          <DownloadGratisPage />
+        {/* Retargeting */}
+        <Route path="/salespage">
+          <Salespage />
         </Route>
-        {/* Header */}
+        <Route path="/orderpage">
+          <Orderpage />
+        </Route>
+        <Route path="/konfirmasipage">
+          <Konfimasipage />
+        </Route>
+        <Route path="/downloadpage">
+          <DownloadPage />
+        </Route>
+
         <Route path="/login">
           <LoginPage />
         </Route>

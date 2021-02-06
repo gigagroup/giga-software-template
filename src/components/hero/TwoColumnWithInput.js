@@ -53,16 +53,19 @@ export default ({ roundedHeaderButton }) => {
         <TwoColumn>
           <LeftColumn>
             <Heading>
-              Template React yang Cantik{" "}
-              <span tw="text-primary-500">untukmu.</span>
+              Anda Tahu gak bahwa dengan
+              <span tw="text-primary-500">
+                {" "}
+                Website dan Facebook Ads anda bisa menghasilkan uang.
+              </span>
             </Heading>
             <Paragraph>
-              Template kami mudah diatur, dipahami, dan disesuaikan. Sepenuhnya
-              komponen modular dengan berbagai halaman dan komponen.
+              Saya akan ceritakan gimana sih dengan sebuah facebook ads bisa
+              menghasilkan uang dari internet.
             </Paragraph>
             <Actions>
               <input type="text" placeholder="Alamat email kamu" />
-              <button>Memulai</button>
+              <button>Dapatkan Panduannya</button>
             </Actions>
             <CustomersLogoStrip>
               <p>Pelanggan TEPERCAYA kami</p>

@@ -3,7 +3,10 @@ import styled from "styled-components";
 import tw from "twin.macro";
 //eslint-disable-next-line
 import { css } from "styled-components/macro";
-import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
+import {
+  SectionHeading,
+  Subheading as SubheadingBase,
+} from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
 
 import defaultCardImage from "images/shield-icon.svg";
@@ -26,7 +29,7 @@ const Subheading = tw(SubheadingBase)`mb-4`;
 const Heading = tw(SectionHeading)`w-full`;
 const Description = tw(SectionDescription)`w-full text-center`;
 
-const VerticalSpacer = tw.div`mt-10 w-full`
+const VerticalSpacer = tw.div`mt-10 w-full`;
 
 const Column = styled.div`
   ${tw`md:w-1/2 lg:w-1/3 max-w-sm`}
@@ -58,7 +61,12 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
 `;
 
-export default ({ cards = null, heading = "Amazing Features", subheading = "Features", description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }) => {
+export default ({
+  cards = null,
+  heading = "Amazing Features",
+  subheading = "Features",
+  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+}) => {
   /*
    * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
    *  1) imageSrc - the image shown at the top of the card
@@ -70,14 +78,34 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
   const defaultCards = [
     {
       imageSrc: ShieldIconImage,
-      title: "Secure",
-      description: "We strictly only deal with vendors that provide top notch security."
+      title: "Kecepatan",
+      description: "Kecepatan website diatas rata-rata minimal 90%.",
     },
-    { imageSrc: SupportIconImage, title: "24/7 Support" },
-    { imageSrc: CustomizeIconImage, title: "Customizable" },
-    { imageSrc: ReliableIconImage, title: "Reliable" },
-    { imageSrc: FastIconImage, title: "Fast" },
-    { imageSrc: SimpleIconImage, title: "Easy" }
+    {
+      imageSrc: SupportIconImage,
+      title: "Copywriting",
+      description: "menarik pelangganmu dengan struktur kata-kata menggoda.",
+    },
+    {
+      imageSrc: CustomizeIconImage,
+      title: "Seo Friendly",
+      description: "Struktur website yang ramah untuk seo.",
+    },
+    {
+      imageSrc: ReliableIconImage,
+      title: "Kualitas",
+      description: "Kualitas konten yang tinggi dan tidak pecah.",
+    },
+    {
+      imageSrc: FastIconImage,
+      title: "Tampilan",
+      description: "Tampilan website yang menarik ",
+    },
+    {
+      imageSrc: SimpleIconImage,
+      title: "Inovatif",
+      description: "Website yang inovatif dan kekinian.",
+    },
   ];
 
   if (!cards) cards = defaultCards;
@@ -98,7 +126,8 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
               <span className="textContainer">
                 <span className="title">{card.title || "Fully Secure"}</span>
                 <p className="description">
-                  {card.description || "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud."}
+                  {card.description ||
+                    "Kami memberiakan pelayanan terbaik anda untuk kebutuhan website yang cepat dan berkualitas."}
                 </p>
               </span>
             </Card>

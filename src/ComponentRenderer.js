@@ -46,7 +46,7 @@ import IllustrationAndPrimaryBackgroundHero from "components/hero/TwoColumnWithP
 
 import FormGratisHero from "pages/leads/Formgratis.js";
 import KonfirmasiGratisHero from "pages/leads/Konfirmasigratis.js";
-import DownloadGratisHero from "pages/leads/Downloadgratis.js";
+import DownloadPageHero from "pages/retargeting/Downloadpage.js";
 
 import TwoPlansWithDurationSwitcherPricing from "components/pricing/TwoPlansWithDurationSwitcher.js";
 import ThreePlansWithHalfPrimaryBackgroundPricing from "components/pricing/ThreePlansWithHalfPrimaryBackground.js";
@@ -235,9 +235,9 @@ export const components = {
           component: KonfirmasiGratisHero,
           url: "/components/blocks/Hero/KonfirmasiGratis",
         },
-        DownloadGratis: {
+        DownloadPage: {
           name: "Full Width Background Image with centered content",
-          component: DownloadGratisHero,
+          component: DownloadPageHero,
           url: "/components/blocks/Hero/DownloadGratis",
         },
       },
