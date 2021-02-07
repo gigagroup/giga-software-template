@@ -103,15 +103,14 @@ import TermsOfServicePage from "pages/TermsOfService.js";
 import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
 // Leads
-import KonfirmasigratisPage from "pages/leads/Konfirmasigratis.js";
 import FormGratisPage from "pages/leads/Formgratis.js";
-import Forminput from "pages/leads/Forminput";
+import KonfirmasigratisPage from "pages/leads/Konfirmasigratis.js";
 
 // Retargeting
-import Salespage from "pages/retargeting/Salespage.js";
+import DownloadPage from "pages/retargeting/Downloadpage.js";
 import Konfimasipage from "pages/retargeting/Konfirmasipage.js";
 import Orderpage from "pages/retargeting/Orderpage.js";
-import DownloadPage from "pages/retargeting/Downloadpage.js";
+import Salespage from "pages/retargeting/Salespage.js";
 
 import ComponentRenderer from "ComponentRenderer.js";
 import MainLandingPage from "MainLandingPage.js";
@@ -145,21 +144,18 @@ export default function App() {
         <Route path="/konfirmasigratis">
           <KonfirmasigratisPage />
         </Route>
-        <Route path="/forminput">
-          <Forminput />
-        </Route>
         {/* Retargeting */}
-        <Route path="/salespage">
-          <Salespage />
-        </Route>
-        <Route path="/orderpage">
-          <Orderpage />
+        <Route path="/downloadpage">
+          <DownloadPage />
         </Route>
         <Route path="/konfirmasipage">
           <Konfimasipage />
         </Route>
-        <Route path="/downloadpage">
-          <DownloadPage />
+        <Route path="/orderpage">
+          <Orderpage />
+        </Route>
+        <Route path="/salespage">
+          <Salespage />
         </Route>
 
         <Route path="/login">
