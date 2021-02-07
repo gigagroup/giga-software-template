@@ -105,6 +105,7 @@ import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 // Leads
 import KonfirmasigratisPage from "pages/leads/Konfirmasigratis.js";
 import FormGratisPage from "pages/leads/Formgratis.js";
+import Forminput from "pages/leads/Forminput";
 
 // Retargeting
 import Salespage from "pages/retargeting/Salespage.js";
@@ -143,6 +144,9 @@ export default function App() {
         </Route>
         <Route path="/konfirmasigratis">
           <KonfirmasigratisPage />
+        </Route>
+        <Route path="/forminput">
+          <Forminput />
         </Route>
         {/* Retargeting */}
         <Route path="/salespage">

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
+// import ContactUsForm from "../leads/Forminput";
 import fbadspemula from "../../images/fbadspemula.png";
 import ReactPixel from "react-facebook-pixel";
 
@@ -82,11 +83,11 @@ export default () => {
         <StyledHeader links={navLinks} />
         <Content>
           <Heading>
-            Gratis
+            Halaman Order
             <br />
-            Video Review Gimana Hanya Dengan 3 Langkah
+            Video Facebook Ads 2020
             <br />
-            Anda Bisa Dapet uang Dari Facebook Ads
+            10 Landing Page
           </Heading>
           <img
             // tw="min-w-0 w-full max-w-lg xl:max-w-3xl"
@@ -94,14 +95,14 @@ export default () => {
             alt="Design fbadspemula"
           />
           <Text>
-            VIDEO HD Durasi 7 Menit
+            VIDEO HD Lebih ari 15 Video Pembelajarandan 10 Landing page
             <br />
             Pemula Pun Bisa Mempraktekkannya <br />
             Lebih 100 orang sudah memilikinya{" "}
           </Text>
-
+          {/* <ContactUsForm /> */}
           <form
-            action="https://gigasoftware.vercel.app/konfirmasigratis"
+            action="https://gigasoftware.vercel.app/konfirmasipage"
             accept-charset="utf-8"
             method="post"
           >
