@@ -28,7 +28,7 @@ const PrimaryLink = tw(PrimaryLinkBase)`rounded-full`;
 const Container = styled.div`
   ${tw`relative bg-center bg-cover h-screen min-h-144`}
   background-image: url("https://images.unsplash.com/photo-1536300007881-7e482242baa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=80");
-  min-height: 56rem;
+  min-height: 66rem;
 `;
 
 const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-black opacity-75`;
@@ -76,9 +76,9 @@ export default () => {
         <StyledHeader links={navLinks} />
         <Content>
           <Heading>
-            HALAMAN DOWNLOAD
+            DOWNLOAD
             <br />
-            "3 Langkah Bisa Dapet Duit Dari Facebook Ads"
+            "Facebook Ads 2021" dan "10 Template Landing Page"
           </Heading>
           <img
             // tw="min-w-0 w-full max-w-lg xl:max-w-3xl"
@@ -89,7 +89,13 @@ export default () => {
             href="https://www.mediafire.com/file/z763lwck4hp1ze7/39_-_MRR_FB_ADS_PEMULA_2020.rar/file"
             target="_blank"
           >
-            Download Disini
+            Download Video Facebook Ads
+          </PrimaryAction>
+          <PrimaryAction
+            href="https://www.mediafire.com/file/z763lwck4hp1ze7/39_-_MRR_FB_ADS_PEMULA_2020.rar/file"
+            target="_blank"
+          >
+            Download 10 Template landing page
           </PrimaryAction>
         </Content>
       </HeroContainer>
